@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>login</title>
+</head> 
+<body>
+    <label class="switch">
+        <input type="checkbox" id="themeSwitch">
+        <span class="sliderNight"><ion-icon name="moon-outline"></ion-icon>Night</span>
+        <span class="sliderDay"><ion-icon name="sunny-outline"></ion-icon>Day</span>
+    </label>
+<div class="loginform">
+    <h1 id="loginOrRegister">login or register</h1>
+    <form action="">
+        <h2>Login</h2>
+        <div class="inputs">
+            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+            <input type="email" id="emailId">
+            <label>Email</label>
+        </div>
+        <div class="inputs">
+            <span class="icon"><ion-icon name="key-sharp"></ion-icon></span>
+            <input type="password" id="passwordId">
+            <label>Password</label>
+        </div>
+        <div class="rememberandforgot">
+            <label><input type="checkbox">Remember me</label>
+            <a href="#">Forgot password</a>
+        </div>
+        <div class="loginButton">
+        </div>
+    </form>
+    <button onclick="passcode()">Login</button>
+    <div class="register">
+            <p>dont have an accont? <a href="#">register</a></p>
+        </div>
+</div>
+    <script src="login.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
